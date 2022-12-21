@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <link rel="stylesheet" href="DOMstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header>
+         <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <h1 id="title">store content</h1>
+            <section class="items">
+                <div class="container">
+                    <div class="first_item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXed9XHzUteSdIsnnTdlDn5M0cX5yN_PQXqQ&usqp=CAU" alt="shirt pic">
+                        <h2>t-shirt</h2>
+                        <h3>unit price :</h3><h3 class="price"> 50</h3>
+                        <button class="btnMoins">-</button>
+                        <span class="qte">0</span>
+                        <button class="btnPlus">+</button>
+                        <br>
+                        <br>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="second_item">
+                        <img src="data:image/jpeg;base64,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" alt="pants pic">
+                        <h2>pants</h2>
+                        <h3>unit price :</h3><h3 class="price"> 80</h3>
+                        <button class="btnMoins">-</button>
+                        <span class="qte">0</span>
+                        <button class="btnPlus">+</button>
+                        <br>
+                        <br>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="third_item">
+                        <img src="https://img.hatshopping.com/Champion-Baseball-Cap-blue.92719_rf2.jpg" alt="baseball cap pic">
+                        <h2>baseball cap</h2>
+                        <h3>unit price :</h3><h3 class="price"> 20</h3>
+                        <button class="btnMoins">-</button>
+                        <span class="qte">0</span>
+                        <button class="btnPlus">+</button>
+                        <br>
+                        <br>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+            </section>    
+                <div class="total">
+                    <h2>your total will be :</h2>
+                    <span id="total">0</span>
+                </div>
+    </header>
+    <script src="DOMinteract.js"></script>
+</body>
+</html>
